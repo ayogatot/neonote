@@ -1,0 +1,105 @@
+/* Context Sticky Styles - Neubrutalism */
+
+.cs-sticky-note {
+    position: absolute;
+    width: 200px;
+    min-height: 150px;
+    background-color: #fff9c4;
+    /* Default pastel yellow */
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px #000000;
+    z-index: 2147483647;
+    /* Max z-index */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.cs-sticky-header {
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5px;
+    cursor: grab;
+    user-select: none;
+}
+
+.cs-sticky-header:active {
+    cursor: grabbing;
+}
+
+.cs-sticky-content {
+    flex-grow: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000000;
+    resize: none;
+    /* We might want to allow resizing later */
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cs-sticky-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+    font-family: inherit;
+}
+
+.cs-sticky-btn:hover {
+    color: #ffeb3b;
+}
+
+/* Minimized State */
+.cs-sticky-note.minimized {
+    width: 40px;
+    min-height: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.cs-sticky-note.minimized .cs-sticky-header,
+.cs-sticky-note.minimized .cs-sticky-content {
+    display: none;
+}
+
+.cs-sticky-note.minimized::after {
+    content: '!';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Color Variants */
+.cs-color-yellow {
+    background-color: #fff9c4;
+}
+
+.cs-color-pink {
+    background-color: #f8bbd0;
+}
+
+.cs-color-blue {
+    background-color: #bbdefb;
+}
+
+.cs-color-green {
+    background-color: #c8e6c9;
+}

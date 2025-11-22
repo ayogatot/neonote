@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NeoNote</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+            font-family: monospace;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 16px;
+            border-bottom: 3px solid black;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .note-card {
+            background: white;
+            border: 2px solid black;
+            box-shadow: 3px 3px 0px black;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        .note-card:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 4px 0px black;
+            background-color: #fff9c4;
+        }
+
+        .note-card:active {
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 0px black;
+        }
+
+        .note-preview {
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: bold;
+        }
+
+        .note-meta {
+            font-size: 10px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        #clear-all {
+            width: 100%;
+            padding: 8px;
+            background: #ff5252;
+            color: white;
+            border: 2px solid black;
+            box-shadow: 3px 3px 0px black;
+            font-family: monospace;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #clear-all:active {
+            transform: translate(2px, 2px);
+            box-shadow: 1px 1px 0px black;
+        }
+
+        #clear-all:disabled {
+            background: #ccc;
+            color: #666;
+            box-shadow: none;
+            transform: none;
+            cursor: not-allowed;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 10px;
+            border-top: 2px solid black;
+            padding-top: 10px;
+        }
+
+        .credit-text {
+            display: block;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .credit-name {
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+            background: #fff9c4;
+            padding: 0 2px;
+            border: 1px solid black;
+        }
+
+        .kofi-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            background: #ff5252;
+            /* Ko-fi red-ish but brighter */
+            color: white;
+            padding: 5px 10px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 0px black;
+            font-weight: bold;
+            font-size: 10px;
+            transition: transform 0.1s;
+        }
+
+        .kofi-link:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 3px 3px 0px black;
+        }
+
+        .kofi-link:active {
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px; padding-bottom: 10px;">
+        <img src="../icons/icon48.png" style="width: 32px; height: 32px;">
+        <h1 style="border: none; margin: 0; padding: 0;">NeoNote</h1>
+    </div>
+    <div id="notes-count" style="font-size: 12px; font-weight: bold; margin-bottom: 10px;"></div>
+    <div id="notes-list"></div>
+    <button id="clear-all">Clear All Notes</button>
+
+    <footer>
+        <span class="credit-text">Made with ❤️ by <a href="https://github.com/ayogatot" target="_blank"
+                class="credit-name">@ayogatot</a></span>
+        <a href="https://ko-fi.com/ayogatot" target="_blank" class="kofi-link">
+            ☕ Buy me a coffee
+        </a>
+    </footer>
+    <script src="popup.js"></script>
+</body>
+
+</html>
