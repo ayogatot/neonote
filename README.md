@@ -2,6 +2,9 @@
   <img src="icons/icon128.png" alt="NeoNote Logo" width="100" />
   <h1>NeoNote</h1>
   <p>Persistent, Neubrutalist sticky notes for the web.</p>
+   <a href="https://chromewebstore.google.com/detail/mnjbhmambajjbpahnhfamlmoaoeloidf">
+    <img src="https://img.shields.io/badge/Chrome_Web_Store-Available-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Available in the Chrome Web Store" />
+  </a>
 </div>
 
 ## Features
