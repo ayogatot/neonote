@@ -5,6 +5,9 @@
    <a href="https://chromewebstore.google.com/detail/mnjbhmambajjbpahnhfamlmoaoeloidf">
     <img src="https://img.shields.io/badge/Chrome_Web_Store-Available-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Available in the Chrome Web Store" />
   </a>
+  <a href="https://www.nxgntools.com/tools/neonote" target="_blank" rel="noopener" style="display: inline-block; width: auto;">
+    <img src="https://www.nxgntools.com/api/embed/neonote?type=LAUNCHING_SOON_ON&hideUpvotes=true" alt="NextGen Tools Badge" style="height: 28px; width: auto;" />
+</a>
 </div>
 
 ## Features
