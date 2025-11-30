@@ -198,6 +198,12 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                 note.style.transform = originalTransform;
             }, 500);
         }
+    } else if (request.action === 'url_changed') {
+        // Clear existing notes
+        const notes = document.querySelectorAll('.cs-sticky-note');
+        notes.forEach(note => note.remove());
+        // Load notes for new URL
+        loadNotes();
     }
 });
 
